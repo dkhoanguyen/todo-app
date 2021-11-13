@@ -23,7 +23,7 @@ var userList = []user{
 }
 
 // Check if the username and password combination is valid
-func isUserValid(username string, password string) bool {
+func isUserValid(username, password string) bool {
 	for _, u := range userList {
 		if u.Username == username && u.Password == password {
 			return true
